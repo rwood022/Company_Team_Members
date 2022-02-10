@@ -1,10 +1,9 @@
-const inquirer = require('inquirer');
-
+const Inquirer = require('inquirer');
 
 let inquirer;
 
 
-inquirer = new Inquirer(
+const inquirer = new Inquirer(
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASS,

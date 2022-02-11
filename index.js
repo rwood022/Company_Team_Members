@@ -17,7 +17,7 @@ const questions = () => {
     ]).then((choices) => {
         switch(choices.directory) {
             case "View All Employees":
-                renderEmployees();
+                viewEmployees();
                 break;
             case "Add Employee":
                 addEmployee();
@@ -42,7 +42,14 @@ const questions = () => {
     })
 }
 
-const renderEmployees = () => {
+const viewEmployees = () => {
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "name", 
+            message: "",
+        },
+    ])
 
 }
 
